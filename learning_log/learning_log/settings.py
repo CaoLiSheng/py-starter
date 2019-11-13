@@ -25,7 +25,7 @@ SECRET_KEY = 'h7@iw@u2!l(^^^zm#tl2n@iiu5&wbg45&v1o7#8i5w9(8229fz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # 我的应用程序
     'learning_logs',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# 我的设置
+LOGIN_URL = '/users/login/'

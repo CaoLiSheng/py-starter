@@ -8,3 +8,4 @@
 - python manage.py startapp learning_logs
 - python manage.py makemigrations learning_logs
 - python manage.py createsuperuser
+- python manage.py shell
