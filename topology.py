@@ -20,17 +20,18 @@ def top_order(G):
     for n in G:
         S, res = [], []
         if not(recurse(n)):
-            return -1
+            return [-1]
         if len(S) == len(G):
             return res
-    return -1
+    return [-1]
 
 
 n = Node("Quelle")
 m = Node("Senke")
 n.successors = [m]
 m.successors = []
-g = [m, n]
-print(top_order(g))
+print(top_order([m, n]))
+print(top_order([n, m]))
 m.successors = [n]
-print(top_order(g))
+print(top_order([m, n]))
+print(top_order([n, m]))
