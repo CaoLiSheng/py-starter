@@ -2,7 +2,7 @@
 # coding=utf-8
 
 # import numpy as np
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 
 # x = np.linspace(0, 10, 1000)
 # y1 = np.sin(x) + 1
@@ -27,5 +27,6 @@ plt.xlabel('Timestamp ')
 plt.ylabel('Packages')
 plt.title('A simple example')
 plt.ylim(0, 20)
-# plt.legend()
-plt.savefig('foo.png')
+plt.legend()
+plt.show()
+# plt.savefig('foo.png')
